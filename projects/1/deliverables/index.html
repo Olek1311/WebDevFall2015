@@ -4,5 +4,63 @@
 </head>
 <body>
 
+
+<h1>Hei Hei</H1>
+<h2>Hei Hei</H2>
+<h3>Hei Hei</H3>
+<h4>Hei Hei</H4>
+<h5>Hei Hei</H5>
+<h6>Hei Hei</H6>
+
+<p> hey im a paragraph tag </p>
+
+<u1>
+	<li>List item 1</li>
+	<li>List item 2</li>
+
+</ul>
+
+<ol>
+	<li>list item 1</li>
+	<li>list item 2</li>
+	<li>list item 3</li>
+</ol>
+
+<form id="sayHi">
+	<input id="firstname" type="text" name="firstname">
+	<input type="submit" value="Submit">
+</form>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function(){
+		$("#sayHi").on("submit", function (e) {
+
+			e.preventDefault();
+
+			var firstname = $("#firstname").val();
+
+			alert("Hello, " +firstname+"you rock");
+
+		});
+	});
+
+
+</script>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
